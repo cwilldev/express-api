@@ -1,0 +1,7 @@
+.project
+.idea
+.iml
+.settings/
+dump.rdb
+node_modules/
+static/

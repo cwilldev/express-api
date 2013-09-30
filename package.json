@@ -1,0 +1,13 @@
+{
+    "name": "express-api",
+    "version": "0.0.1",
+    "private": false,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "validator": "*",
+        "q": "0.9.x",
+        "wrench": "~1.5.1"
+    }
+}

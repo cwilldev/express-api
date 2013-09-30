@@ -1,0 +1,10 @@
+- File upload support
+- XML provider
+- Authentication
+- - Passport
+- - OAuth2
+- Error handler support for several provider (XML, HTML etc)
+- Implement all HTTP verbs (as of now just GET< POST and PUT are supported)
+- Replace evals
+- Support API to delegate log-output to appropriate (and configurable) handler
+- Add support for custom validator
