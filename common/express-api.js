@@ -216,6 +216,13 @@ ExpressApi.prototype.onEndpointRequested = function (request, response, next) {
         // Get provider on the fly using the format-factory
         var Provider = require('./provider-factory').getInstance(request.apiEndpoint['request']['provider'] || 'json');
 
+	
+        // Sanitize data and send to client
+        if (request.apiEndpoint['response']['novalidate'] == true) {
+          Provider.send(response, data)
+          return;
+        }		
+
         // Validate request parameter
         Provider.validateRequestParams(requestParams, apiVerbEndpoint['request'])
 
